@@ -1,0 +1,64 @@
+# ----------------------------
+# Node dependencies
+# ----------------------------
+node_modules/
+package-lock.json
+# ----------------------------
+# Expo / React Native
+# ----------------------------
+.expo/
+dist/
+web-build/
+expo-env.d.ts
+.nativewind-env.d.ts
+
+# ----------------------------
+# Native build outputs
+# ----------------------------
+# Android
+android/.gradle/
+android/.idea/
+android/app/build/
+android/build/
+
+# iOS
+ios/build/
+ios/Pods/
+
+# ----------------------------
+# Metro / bundler
+# ----------------------------
+.metro-health-check*
+
+# ----------------------------
+# Debug / logs
+# ----------------------------
+npm-debug.*
+yarn-debug.*
+yarn-error.*
+
+# ----------------------------
+# macOS
+# ----------------------------
+.DS_Store
+
+# ----------------------------
+# Environment files
+# ----------------------------
+# .env
+# .env.*
+# !.env.example   # optional: keep example file in git
+
+# ----------------------------
+# Sensitive files / keys
+# ----------------------------
+*.jks
+*.p8
+*.p12
+*.key
+*.mobileprovision
+
+# ----------------------------
+# TypeScript
+# ----------------------------
+*.tsbuildinfo

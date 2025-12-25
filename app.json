@@ -1,0 +1,95 @@
+{
+  "expo": {
+    "name": "dregali-deans-list",
+    "slug": "dregali-deans-list",
+    "owner": "rakshan101",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/logo.png",
+    "scheme": "dregalideanslist",
+    "userInterfaceStyle": "automatic",
+    "newArchEnabled": true,
+    "ios": {
+      "supportsTablet": true,
+      "infoPlist": {
+        "NSLocationWhenInUseUsageDescription": "This app needs access to your location to fetch your current location for job postings.",
+        "NSLocationAlwaysAndWhenInUseUsageDescription": "This app needs access to your location to fetch your current location for job postings."  
+      },
+      "bundleIdentifier": "com.anonymous.dregalideanslist"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/images/logo.png",
+        "backgroundColor": "#ffffff"
+      },
+      "edgeToEdgeEnabled": true,
+      "permissions": [
+        "ACCESS_FINE_LOCATION",
+        "ACCESS_COARSE_LOCATION",
+        "ACCESS_FINE_LOCATION",
+        "android.permission.RECORD_AUDIO",
+        "android.permission.MODIFY_AUDIO_SETTINGS"
+      ],
+      "package": "com.anonymous.dregalideanslist"
+    },
+    "web": {
+      "bundler": "metro",
+      "output": "static",
+      "favicon": "./assets/images/logo.png"
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "expo-splash-screen",
+        {
+          "image": "./assets/images/logo.png",
+          "imageWidth": 200,
+          "resizeMode": "contain",
+          "backgroundColor": "#ffffff"
+        }
+      ],
+      [
+        "@react-native-google-signin/google-signin",
+        {
+          "iosUrlScheme": "com.googleusercontent.apps._some_id_here_"
+        }
+      ],
+      [
+        "expo-location",
+        {
+          "locationAlwaysAndWhenInUsePermission": "This app needs access to your location to fetch your current location for job postings.",
+          "locationAlwaysPermission": "This app needs access to your location to fetch your current location for job postings.",
+          "locationWhenInUsePermission": "This app needs access to your location to fetch your current location for job postings."
+        }
+      ],
+      "./app.plugin.js",
+      "expo-secure-store",
+      "expo-web-browser",
+      [
+        "expo-video",
+        {
+          "supportsBackgroundPlayback": true,
+          "supportsPictureInPicture": true
+        }
+      ],
+      "expo-audio"
+    ],
+    "experiments": {
+      "typedRoutes": true
+    },
+    "extra": {
+      "googleWebClientId": "895968454267-4u24od1496621vr1thu9cafj7g3idq06.apps.googleusercontent.com",
+      "googleIosClientId": "895968454267-lnpabkn51nsi00ocm4nj4emqfdon6fbu.apps.googleusercontent.com",
+      "googleAndroidClientId": "895968454267-qedbe47059p17qe675i3dacf37fcrolt.apps.googleusercontent.com",
+      "router": {},
+      "eas": {
+        "projectId": "38689d92-eca8-4f4b-a349-9f2b138b58c1"
+      },
+      "EAS_GOOGLE_MAPS_API_KEY": "<GOOGLE_MAPI_KEY>"
+    },
+    "runtimeVersion": "1.0.0",
+    "updates": {
+      "url": "https://u.expo.dev/38689d92-eca8-4f4b-a349-9f2b138b58c1"
+    }
+  }
+}
